@@ -1,0 +1,115 @@
+/* Base Styles for Large Screens (Desktops, Laptops) */
+@media (min-width: 1024px) {
+    body {
+        font-size: 18px;
+    }
+
+    nav {
+        height: 10vh;
+    }
+
+    section {
+        margin: 0 10rem;
+        padding: 2rem;
+    }
+
+    .section__pic-container {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+/* Styles for Tablets (Portrait & Landscape) */
+@media (max-width: 1024px) and (min-width: 768px) {
+    nav {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 12vh;
+    }
+
+    .nav-links {
+        gap: 1.5rem;
+        font-size: 1.2rem;
+    }
+
+    section {
+        margin: 0 5rem;
+    }
+
+    .section__pic-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    table {
+        width: 100%;
+    }
+}
+
+/* Styles for Mobile Devices (Landscape) */
+@media (max-width: 768px) and (min-width: 480px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem 0;
+    }
+
+    .nav-links {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 1rem;
+    }
+
+    section {
+        margin: 0 2rem;
+    }
+
+    .section__pic-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    table th, table td {
+        padding: 0.5rem;
+    }
+}
+
+/* Styles for Small Mobile Devices (Portrait) */
+@media (max-width: 480px) {
+    nav {
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: 0.9rem;
+    }
+
+    section {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    .section__pic-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    footer p {
+        font-size: 0.8rem;
+    }
+}
